@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анімація CSS</title>
+    <style>
+        /* CSS анімації */
+        @keyframes changeColor {
+            0% { background-color: red; }
+            50% { background-color: blue; }
+            100% { background-color: green; }
+        }
+
+        @keyframes expand {
+            0% { width: 100px; height: 100px; }
+            50% { width: 200px; height: 200px; }
+            100% { width: 100px; height: 100px; }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Стилізація елементів */
+        .element {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+
+        }
+        .element1{
+            width: 100%;
+            height: 1000px;
+        }
+        body{
+            background-color: black;
+        }
+
+        body {
+            height: 2000px; /* Додайте висоту сторінки, щоб можна було прокрутити */
+            margin: 0;
+            padding: 0;
+        }
+
+        .element1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 0.5s ease;
+            animation: scrollMovement 2s infinite alternate; /* Анімація для руху */
+        }
+
+        @keyframes scrollMovement {
+            0% { transform: translate(-50%, -50%) translateY(0); }
+            100% { transform: translate(-50%, -50%) translateY(100px); }
+        }
+
+    </style>
+</head>
+<body>
+<!-- HTML елементи для анімації -->
+<!--<div class="element1" style="animation: changeColor 2s linear infinite;"></div>-->
+<div class="element1">хуй</div>
+
+
+<div class="element" style="animation: changeColor 2s linear infinite;">Зміна кольору фону</div>
+<div class="element" style="animation: expand 2s infinite;">Розширення</div>
+<div class="element" style="animation: rotate 2s linear infinite;">Обертання</div>
+</body>
+</html>

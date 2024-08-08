@@ -1,0 +1,802 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display:none}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6,p,h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*syntax css*/
+
+p{
+    /*color: #9c2f2f;*/
+}
+body{
+    background-color: black;
+    color: #0ae4a4;
+}
+span.name{
+    color: #0aa3e4;
+}
+.name{
+    color: #041b65;
+}
+.name1 span{
+    color: #336504;
+}
+.block>p{
+    color: #e4b10a;
+}
+
+/*styles css*/
+
+/* font-family */
+.font-family {
+    margin: 15px 0 15px 0;
+    font-family: "Times New Roman", Times, serif; /* "Назва шрифту",
+    "Назва шрифту", тип шрифту
+Встановлює сімейство шрифту
+Типи шрифту:*/
+}
+/* Serif Font */
+.serif {
+    margin: 15px 0 15px 0;
+    font-family: "Times New Roman", Times, serif;/* шрифти з засечками
+     (антикварні), типу Times*/
+}
+
+/* Sans-serif Font */
+.sans-serif {
+    margin: 15px 0 15px 0;
+    font-family: Arial, sans-serif; /* рублені шрифти (шрифти без засечок
+    або гротески), типовий представник — Arial;*/
+}
+
+/* Cursive Font */
+.cursive {
+    margin: 15px 0 15px 0;
+    font-family: cursive; /* курсивні шрифти; */
+}
+
+/* Fantasy Font */
+.fantasy {
+    margin: 15px 0 15px 0;
+    font-family: fantasy;/* декоративні шрифти;*/
+}
+
+/* Monospace Font */
+.monospace {
+    margin: 15px 0 15px 0;
+    font-family: Courier, monospace;/* моноширинні шрифти, ширина кожного
+    символу в такому сімействі однакова (шрифт Courier).*/
+}
+
+/* font-size */
+.font-size {
+    margin: 15px 0 15px 0;
+    font-size: 20px; /* Визначає розмір шрифту елемента. */
+}
+
+/* font-style */
+.font-style {
+    margin: 15px 0 15px 0;
+    font-style: italic; /* Курсивне начертання. /normal - Звичайне
+    начертання тексту.
+/oblique - Нахилений шрифт. Курсив та нахилений шрифт, незважаючи на
+їх схожість, не одне й те ж. Курсив це спеціальний
+шрифт, що імітує рукописний, нахилений же утворюється шляхом нахилу
+звичайних знаків вправо.*/
+}
+
+/* font-weight */
+.font-weight {
+    margin: 15px 0 15px 0;
+    font-weight: 900; /* font-weight:
+Встановлює насиченість шрифту.
+100 - thin
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+900 - black
+ */
+}
+
+/* text-align */
+.text-align {
+    margin: 15px 0 15px 0;
+    text-align: center; /* text-align
+Визначає горизонтальне вирівнювання тексту в межах елемента.
+center - Вирівнювання тексту по центру.
+justify - Вирівнювання за шириною, що означає одночасне вирівнювання
+по лівому та правому краю. Щоб здійснити цю дію, браузер у цьому випадку
+додає пробіли між словами.
+left - Вирівнювання тексту по лівому краю.
+right - Вирівнювання тексту по правому краю.
+ */
+}
+
+/* text-decoration */
+.text-decoration {
+    margin: 15px 0 15px 0;
+    text-decoration: underline; /* text-decoration
+Додає оформлення тексту у вигляді його підкреслення, перекреслення, лінії
+над текстом та миготіння.
+Одночасно можна застосувати більше одного стилю, перераховуючи значення
+через пробіл. Це властивість успадковується і може приймати значення:
+line-through - Створює перекреслений текст.
+overline - Лінія проходить над текстом.
+underline - Встановлює підкреслений текст.
+none - Скасовує всі ефекти, включаючи підкреслення у посилань, яке задане
+за замовчуванням.
+ */
+}
+
+/* text-shadow */
+.text-shadow {
+    margin: 15px 0 15px 0;
+    text-shadow: 2px 2px 2px #ddd0d0; /* text-shadow: горизонтальне_зсув
+    вертикальне_зсув розмір колір;
+Додає тінь до тексту.
+Приклад text-shadow: 1px 1px 1px #000;
+ */
+}
+
+/* text-transform */
+.text-transform {
+    margin: 15px 0 15px 0;
+    text-transform: uppercase; /* Керує перетворенням тексту у
+    великі чи малі символи.
+capitalize - Перший символ кожного слова у реченні буде великим.
+ Інші символи залишаються без змін.
+lowercase - Всі символи тексту перетворюються у малі літери.
+uppercase - Всі символи тексту перетворюються у великі літери.
+none - Не змінює регістр символів.
+ */
+}
+
+/* text-indent */
+.text-indent {
+    margin: 15px 0 15px 0;
+    text-indent: 60px; /* text-indent
+Встановлює величину відступу першого рядка блоку тексту. Застосовується,
+якщо потрібно створити щось на зразок відступу
+першого рядка.*/
+}
+
+/* letter-spacing */
+.letter-spacing {
+    margin: 15px 0 15px 0;
+    letter-spacing: 9px; /* letter-spacing
+Визначає інтервал між символами (літерами). Використовується, коли потрібно
+ розрідити текст. */
+}
+
+/* line-height */
+.line-height {
+    margin: 15px 0 15px 0;
+    line-height: 40px; /* line-height
+Встановлює міжрядковий інтервал тексту. Широко застосовується при верстці
+тексту.
+ */
+}
+
+/* white-space */
+.white-space {
+    margin: 15px 0 15px 0;
+    white-space: nowrap; /* white-space
+Керує властивостями пробілів між словами. Використовується в основному
+зі значенням nowrap, яке забороняє перенесення рядка. Таким чином, весь
+текст відображається в один рядок і не розбивається. Значення normal
+повертає все до початкового вигляду.
+ */
+}
+
+/* word-spacing */
+.word-spacing {
+    margin: 15px 0 15px 0;
+    word-spacing: 12px; /* word-spacing9
+Встановлює інтервал між словами. */
+}
+
+/*Свойства блоков. CSS padding. CSS margin. CSS display. Уроки CSS HTML JS. Урок №7*/
+
+
+.padding{
+    margin: 30px 0 30px 0;
+    padding: 1%;
+    border: 1px solid #84899c;
+    /*padding*/
+    /*Внутренний отступ элемента*/
+    /*При указании поля в процентах, значение считается от ширины родителя
+    элемента.*/
+    /*Свойство не наследуется.*/
+
+    /*padding: со_всех_сторон;*/
+    /*padding: сверху справа снизу слева;*/
+    /*padding: сверху_снизу справа_слева;*/
+    /*padding: сверху справа_слева снизу;*/
+
+    /*Отступ сверху и снизу не действует на срочные теги*/
+}
+.margin{
+    margin: 30px 0 30px 0;
+    border: 1px solid #84899c;
+    /*Внешний отступ элемента*/
+    /*При указании поля в процентах, значение считается от ширины родителя
+     элемента.*/
+    /*Свойство не наследуется.*/
+    /*Значение может быть как положительным, !!!!!так и отрицательным
+    числом.*/
+
+    /*margin: со_всех_сторон;*/
+    /*margin: сверху справа снизу слева;*/
+    /*margin: сверху_снизу справа_слева;*/
+    /*margin: сверху справа_слева снизу;*/
+
+    /*Отступ сверху и снизу не действует на срочные теги*/
+}
+.width{
+    margin: 30px 0 30px 0;
+    width: 500px;
+    border: 1px solid #84899c;
+/*Устанавливает ширину блочных тегов и некоторыйх строчных (например img)*/
+/*Свойство не наследуется.*/
+/*width:100px;*/
+/*width:10%;*/
+}
+.width-img{
+    margin: 30px 0 30px 0;
+    width: 2%;
+/*    max-width*/
+/*    Устанавливает максимальную ширину блочных тегов и некоторыйх
+строчных (например img)*/
+/*=========================================*/
+/*min-width*/
+/*Устанавливает минимальную ширину блочных тегов и некоторыйх строчных
+(например img)*/
+}
+.height{
+    margin: 30px 0 30px 0;
+    height: 90px;
+    border: 1px solid #84899c;
+
+/*    Устанавливает высоту блочных тегов и некоторыйх строчных (например img)*/
+/*Свойство не наследуется.*/
+/*height:100px;*/
+/*    height:10%;*/
+/*=========================================*/
+/*min-height*/
+/*Свойство не наследуется.*/
+/*=========================================*/
+/*max-height*/
+/*Свойство не наследуется.*/
+}
+.overflow{
+    margin: 30px 0 30px 0;
+    overflow: auto;
+    max-height: 50px;
+    border: 1px solid #84899c;
+/*    Управляет отображением содержания блочного элемента*/
+/*    visible - Отображается все содержание элемента, даже за пределами установленной высоты и ширины.*/
+/*hidden - Отображается только область внутри элемента, остальное будет скрыто.*/
+/*scroll - Всегда добавляются полосы прокрутки.*/
+/*auto - Полосы прокрутки добавляются только при необходимости.*/
+}
+.display{
+    margin: 30px 0 30px 0;
+    display: block;
+    border: 1px solid #84899c;
+    /*Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+Свойство не наследуется.
+
+block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>,
+заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого.
+inline - Элемент отображается как встроенный. Использование блочных тегов, таких как <div> и <p>, автоматически создает
+перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое
+блочных элементов начинается с того места, где окончился предыдущий элемент.
+inline - block - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно
+встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <img>).
+При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный.
+none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так,
+словно элемента и не было.
+*/
+}
+/*box-sizing
+Применяется для изменения алгоритма расчета ширины и высоты элемента.
+Свойство наследуется.
+content-box - Основывается на стандартах CSS, при этом свойства width и height задают ширину и высоту контента и не
+включают в себя значения отступов, полей и границ.
+border-box - Свойства width и height включают в себя значения полей и границ, но не отступов (margin). Эта модель
+используется браузером Internet Exporer в режиме несовместимости.
+padding-box - Свойства width и height включают в себя значения полей, но не отступов (margin) и границ (border). */
+
+
+
+/*Свойства и стили оформления блоков. CSS opacity. Уроки HTML CSS JS. Урок №8*/
+
+.border{
+    margin: 30px 0 30px 0;
+    border-top: 5px dashed #082698;
+
+    /*Универсальное свойство border позволяет одновременно установить толщину,
+стиль и цвет границы вокруг элемента.
+border: 1px solid #000; (размер стиль цвет)
+Основные стили -solid dotted dashed*/
+}
+.border-img{
+    margin: 30px 0 30px 0;
+    border: 5px dashed #082698;
+    width: 3%;
+}
+.border-radius{
+    margin: 30px 0 30px 0;
+    border-radius: 20px;
+    border: 5px solid #082698;
+
+    /*Устанавливает радиус скругления уголков блока.
+border-radius:50%; - кргуг
+Можно использовать вместе с overflow: hidden;*/
+}
+
+.outline{
+    margin: 30px 0 30px 0;
+    outline: 5px solid #082698;
+    padding-top: 5px;
+
+    /*Универсальное свойство, одновременно устанавливающее цвет,
+стиль и толщину внешней границы на всех четырех сторонах элемента.
+В отличие от линии, задаваемой через border, свойство outline
+не влияет на положение блока и его ширину.
+Также нельзя задать параметры линии на отдельных сторонах элемента,
+outline применяется сразу ко всем четырём сторонам. */
+}
+
+.box-shadow{
+    margin: 30px 0 30px 0;
+    box-shadow: 5px 5px 10px 5px #082698, inset 5px 5px 10px 0 #bcc0cd;
+    border-radius: 20px;
+    padding: 5px;
+    /*Добавляет тень к элементу.
+box-shadow: сдвиг_по_гориз сдвиг_по_верт радиус расстояние
+Можно добавить много теней. На тень влияет свойство border-radius.*/
+}
+
+.opacity{
+    opacity: 0.3;
+    margin: 30px 0 30px 0;
+
+    /*Определяет уровень прозрачности элемента.
+Отличие opacity:0; от display:none; в том что блок не убирается из верстки а только становиться прозрачным, то есть
+занимаемое им место остается. Так же, с прозрачными элементами все еще можно взаимодействовать, например кликать по
+ссылкам.*/
+}
+
+.visibility{
+
+    visibility: collapse;
+    margin: 30px 0 30px 0;
+
+    /*Предназначен для отображения или скрытия элемента.
+Отличие visibility: hidden; от display:none; в том что блок не убирается из верстки а только скрывается, то есть
+занимаемое им место остается.
+Отличие visibility: hidden; от opacity:0; в том что блок скрывается и взаимодействовать с ним нельзя.
+*/
+}
+
+/*CSS свойство BACKGROUND. Делаем фон для сайта // Уроки HTML CSS JS. Урок №9*/
+
+
+.background-color{
+    background-color: #c36629;
+    height: 100px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 5px 5px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-image{
+    background-color: #c36629;
+    height: 100px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.div-background-image{
+    background-image: url("../img/3.jpg");
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-linear-gradient{
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    height: 100px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+/*Подробнее о градиентах:
+http://htmlbook.ru/css3-na-primerakh/lineinyi-gradient
+
+Инструмент создания готового кода:
+https://www.colorzilla.com/gradient-editor/*/
+.background-radial-gradient{
+    background:radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+
+    height: 100px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-repeat{
+    background-image: url("../img/3.jpg");
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: space;*/
+    background-repeat: repeat-x;
+    /*background-repeat: repeat-y;*/
+    background-color: #c36629;
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-position{
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-position: 25px 50%;*/
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-attachment{
+    background-image: url("../img/3.jpg");
+    background-attachment: fixed;
+    height: 500px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-attachment-fixed{
+    background-image: url("../img/1.jpg");
+    background-attachment: fixed;
+    height: 400px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-size{
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 50% 80%;
+    height: 300px;
+    width: 50%;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-size-contain{
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-size-cover{
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+.background-img-many{
+    background-image: url("../img/3.jpg"), url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 5px 2px #9c2f2f;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 127, 57, 0.52);
+}
+
+
+
+/*Псевдокласс HOVER и другие. Уроки HTML CSS JS. Урок №10*/
+
+.block1{
+    padding: 15px;
+}
+.block1:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.block1 p{
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+.link{
+    color: #84899c;
+}
+.link:visited{
+    color: chartreuse;
+}
+.link:hover{
+    color: #0aa3e4;
+    background-color: #bcc0cd;
+    border-radius: 5px;
+}
+.link:active{
+    color: #9c2f2f;
+}
+.text-input{
+    border: 1px solid #9c2f2f;
+    border-radius: 10px;
+    height: 35px;
+    width: 12%;
+    font-size: 16px;
+    margin: 15px 0 15px 0;
+}
+.text-input:focus{
+    box-shadow: 2px 5px 5px 2px rgb(255, 255, 255);
+}
+.text-button{
+    display: block;
+    border-radius: 10px;
+    height: 35px;
+    width: 12%;
+    font-size: 16px;
+    background-color: #e4b10a;
+    color: white;
+    margin: 15px 0 15px 0;
+}
+.text-button:hover {
+    color: black;
+    background-color: #041b65;
+}
+.list{
+
+}
+.list li{
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+/*.list li:first-child{*/
+/*    color: #041b65;*/
+/*}*/
+/*.list li:last-child{*/
+/*    color: #336504;*/
+/*    font-size: 20px;*/
+/*}*/
+.list li:nth-child(odd){
+    color: #bcc0cd;
+    font-weight: bold;
+    /*:first-child
+Обращение к первому элементу в блоке
+
+:last-child
+Обращение к последнему элементу в блоке
+
+:nth-child(порядковый номер элемента)
+Обращение к конкретным элементам в блоке
+
+odd - Обращается к элементам с нечётными номерами
+even - Обращается к элементам с чётными номерами
+*/
+}
+
+
+/*Псевдоэлементы BEFORE и AFTER. Уроки HTML CSS JS. Урок №11*/
+
+
+.text-11{
+    margin: 15px 0 15px 0;
+}
+.list-11-1 li{
+    margin: 15px 0 15px 0;
+}
+.list-11-1 li:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50% ;
+    background-color: #041b65;
+    display: inline-block;
+    margin: 5px 0 0 5px;
+}
+.list-11-1 li:hover:before{
+    background-color: #e4b10a;
+}
+.text-11:first-line{
+    background-color: rgba(255, 255, 255, 0.66);
+}
+.text-11:first-letter{
+    font-size: 24px;
+    color: #9c2f2f;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+.list-11 li{
+    margin: 15px 0 15px 0;
+}
+.list-11 li:before{
+    content: '«';
+}
+.list-11 li:after{
+    content: '»';
+}
+
+/*CSS позиционирование (CSS position). Уроки HTML CSS JS. Урок №12*/
+
+
+
+.block-12{
+    padding: 10px;
+    border: #84899c solid 1px;
+    max-width: 900px;
+    height: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+.block-12 div{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.block--1{
+    background-color: #0aa3e4;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    width: 100%;
+
+}
+.block--2{
+    background-color: #e4b10a;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.block--3{
+    background-color: #336504;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.block--4{
+    background-color: #c36629;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.block--5{
+    background-color: #84899c;
+    position: sticky;
+    top: 50px;
+}
+.block--9{
+    background-color: #041b65;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/*Подключение шрифтов. Google Fonts. CSS font-face*/
+
+
+.text-fonts{
+    font-family: "Playwrite HR", cursive;
+    font-size: 20px;
+    line-height: 20px;
+}
+.text-fonts p{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
