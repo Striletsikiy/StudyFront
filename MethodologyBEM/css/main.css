@@ -15,6 +15,7 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
+  background-color: #434343;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -41,41 +42,75 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 }
 .about__container{
-
+  max-width: 823px;
+  margin: 15px auto;
 }
 .about__top{
-
+  margin: 0 0 50px 0;
 }
 .about__title{
-
+  margin: 0 0 30px 0;
 }
 .about__text{
-
+  color: #84899c;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto;
 }
 .about__bottom{
-
+  display: flex;
+  margin: 0 -15px;
 }
 .about__column{
-
+  flex: 0 0 33.333%;
+  padding: 0 15px;
 }
 .title{
-  width: 141px;
-  height: 26px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
   color: aliceblue;
-  font-family: Lato, sans-serif;
-  
+  position: relative;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+.title:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 0 0 -135px;
 }
 
 .item-about{
 
 }
 .item-about__icon{
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .item-about__title{
+  color: #84899c;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  margin: 10px auto;
 
 }
 .item-about__text{
+  color: #84899c;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto;
 
 }
 
